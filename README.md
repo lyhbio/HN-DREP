@@ -1,6 +1,6 @@
 ## HN-DREP: Heterogeneous Network-based Drug Repositioning Evaluation and Prediction database
 The HN-DREP database is a platform that is dedicated to evaluating heterogeneous network-based drug repositioning methods and predicting drug-disease associations. It provides an impartial assessment of existing network-driven drug repositioning methods and consolidates predictions from various repositioning methods. This summary represents the current stage of research on heterogeneous network-based drug repositioning methods, which aims to promote the development of drug repositioning.  
-## Web app
+## Web app https://zenodo.org/badge/DOI/10.5281/zenodo.10674628.svg
 - HN-DREP is available at: http://hn-drep.lyhbio.com.  
 - Docker is available at: https://zenodo.org/records/10674628.
 ## Components
