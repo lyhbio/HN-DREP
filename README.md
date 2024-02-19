@@ -2,6 +2,16 @@
 The HN-DREP database is a platform that is dedicated to evaluating heterogeneous network-based drug repositioning methods and predicting drug-disease associations. It provides an impartial assessment of existing network-driven drug repositioning methods and consolidates predictions from various repositioning methods. This summary represents the current stage of research on heterogeneous network-based drug repositioning methods, which aims to promote the development of drug repositioning.  
 ## Web app
 HN-DREP is available at: http://hn-drep.lyhbio.com.  
+## Components
+
+Our web application consists of two main components:
+
+- **Frontend (DrugRepositionUI)**: This component contains the user interface of our application, built with React. It handles the presentation layer and user interactions, providing an intuitive and interactive experience for users.
+
+- **Backend (DrugRepositionApi)**: This component serves as the backend of our application, developed with the LNMP (Linux, Nginx, MySQL, PHP) stack. It handles data processing, business logic, and communication with the frontend. The backend is responsible for serving API endpoints, querying databases, and conducting data analysis for drug repositioning.
+
+By separating the frontend and backend into distinct components, we ensure modularity, scalability, and maintainability of our web application architecture.
+
 ## Reproducing Our Web Application with Docker: A Step-by-Step Guide
 1. Download Repository Data: Begin by downloading all data from the repository containing the Drug Repositioning Platform codebase. This ensures that the Docker build process has access to all required files and dependencies.Data is available at：`数据链接`
 2. Navigate to Dockerfile Directory: Open a terminal or command prompt and navigate to the directory containing the Dockerfile. This file specifies the configuration and dependencies for our Drug Repositioning Platform.
