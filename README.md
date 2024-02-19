@@ -3,7 +3,7 @@ The HN-DREP database is a platform that is dedicated to evaluating heterogeneous
 ## Web app
 HN-DREP is available at: http://hn-drep.lyhbio.com.  
 ## Reproducing Our Web Application with Docker: A Step-by-Step Guide
-1. Download Repository Data: Begin by downloading all data from the repository containing the Drug Repositioning Platform codebase. This ensures that the Docker build process has access to all required files and dependencies.
+1. Download Repository Data: Begin by downloading all data from the repository containing the Drug Repositioning Platform codebase. This ensures that the Docker build process has access to all required files and dependencies.Data is available at：`数据链接`
 2. Navigate to Dockerfile Directory: Open a terminal or command prompt and navigate to the directory containing the Dockerfile. This file specifies the configuration and dependencies for our Drug Repositioning Platform.
 ~~~
 cd drug
@@ -16,11 +16,11 @@ docker pull php:8.1.9-fpm-bullseye
 ~~~
 docker build --no-cache -t cqupt/hn-drep:latest ./
 ~~~
-5. Modify Hosts File: Update the hosts file on the host machine to ensure proper domain resolution. For Windows users, this file is typically located at C:\Windows\System32\drivers\etc\hosts. Append the following line to the end of the file:
+5. Modify Hosts File: Update the hosts file on the host machine to ensure proper domain resolution. For Windows users, this file is typically located at `C:\Windows\System32\drivers\etc\hosts`. Append the following line to the end of the file:
 ~~~
 127.0.0.1 api
 ~~~
-6. Run Container: Execute the Docker run command to launch the containerized application. Replace the directory paths {codedir}with the respective locations of your codebase on the host machine.
+6. Run Container: Execute the Docker run command to launch the containerized application. Replace the directory paths `{codedir}` with the respective locations of your codebase on the host machine.
 ~~~
 docker run --name drug -itd -p 80:80 -v {codedir}/DrugRepositionUI:/htdocs/DrugRepositionUI:rw -v {codedir}/DrugRepositionApi:/htdocs/DrugRepositionApi:rw cqupt/hn-drep:latest /bin/bash
 ~~~
