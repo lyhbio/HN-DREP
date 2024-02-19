@@ -13,38 +13,38 @@ Our web application consists of two main components:
 By separating the frontend and backend into distinct components, we ensure modularity, scalability, and maintainability of our web application architecture.
 
 ## Reproducing Our Web Application with Docker: A Step-by-Step Guide
-1. Download Repository Data: Begin by downloading all data from the repository containing the Drug Repositioning Platform codebase. This ensures that the Docker build process has access to all required files and dependencies.Data is available at：`数据链接`
-2. Navigate to Dockerfile Directory: Open a terminal or command prompt and navigate to the directory containing the Dockerfile. This file specifies the configuration and dependencies for our Drug Repositioning Platform.
+1. **Download Repository Data**: Begin by downloading all data from the repository containing the Drug Repositioning Platform codebase. This ensures that the Docker build process has access to all required files and dependencies.Data is available at：`数据链接`
+2. **Navigate to Dockerfile Directory**: Open a terminal or command prompt and navigate to the directory containing the Dockerfile. This file specifies the configuration and dependencies for our Drug Repositioning Platform.
 ~~~
 cd drug
 ~~~
-3. Pull Base Image: Start by pulling the required base image from Docker Hub. In this case, we use the PHP 8.1.9 FPM image with the Bullseye distribution.
+3. **Pull Base Image**: Start by pulling the required base image from Docker Hub. In this case, we use the PHP 8.1.9 FPM image with the Bullseye distribution.
 ~~~
 docker pull php:8.1.9-fpm-bullseye
 ~~~
-4. Build Custom Image: Initiate the image build process using the Dockerfile.
+4. **Build Custom Image**: Initiate the image build process using the Dockerfile.
 ~~~
 docker build --no-cache -t cqupt/hn-drep:latest ./
 ~~~
-5. Modify Hosts File: Update the hosts file on the host machine to ensure proper domain resolution. For Windows users, this file is typically located at `C:\Windows\System32\drivers\etc\hosts`. Append the following line to the end of the file:
+5. **Modify Hosts File**: Update the hosts file on the host machine to ensure proper domain resolution. For Windows users, this file is typically located at `C:\Windows\System32\drivers\etc\hosts`. Append the following line to the end of the file:
 ~~~
 127.0.0.1 api
 ~~~
-6. Run Container: Execute the Docker run command to launch the containerized application. Replace the directory paths `{codedir}` with the respective locations of your codebase on the host machine.
+6. **Run Container**: Execute the Docker run command to launch the containerized application. Replace the directory paths `{codedir}` with the respective locations of your codebase on the host machine.
 ~~~
 docker run --name drug -itd -p 80:80 -v {codedir}/DrugRepositionUI:/htdocs/DrugRepositionUI:rw -v {codedir}/DrugRepositionApi:/htdocs/DrugRepositionApi:rw cqupt/hn-drep:latest /bin/bash
 ~~~
-7. Access via Browser: Open your preferred web browser and navigate to localhost to access the Drug Repositioning Platform.
+7. **Access via Browser**: Open your preferred web browser and navigate to localhost to access the Drug Repositioning Platform.
 Conclusion
 
 By following these steps, you can establish a Docker environment tailored for the development and deployment of a Drug Repositioning Platform
 ## Technical Information
-- Frontend:
+- **Frontend**:
 Framework: React, chosen for its component-based development approach and excellent rendering performance.
 Responsive Design: Pages are designed with responsive layouts, adapting seamlessly to various screen sizes and resolutions for enhanced user accessibility across devices.
 Mainstream Frameworks: Utilizes the React framework, one of the three major frontend frameworks alongside Angular and Vue, known for its efficiency in development and improved user experience.  
 
-- Backend:
+- **Backend**:
 Technology Stack: Employed the LNMP stack (Linux, Nginx, MySQL, PHP) for the backend infrastructure.
 Linux: Selected for its efficiency and security, dominating the server operating system market.
 Nginx: Chosen for its lightweight nature and high performance in web environments.
@@ -53,6 +53,6 @@ PHP: A longstanding choice in web development, offering versatility and reliabil
 Caching and Search Optimization: Implemented Redis caching and Elasticsearch as a search engine, enhancing system responsiveness. Hot data such as drugs and diseases are stored in Redis and Elasticsearch, prioritizing cache access to improve performance.
 Elasticsearch Integration: Utilized for keyword searches in drugs and diseases search functionalities, leveraging its indexing capabilities for enhanced search accuracy.  
 
-- Deployment:
+- **Deployment**:
 Kubernetes: Entire system deployed on Kubernetes for efficient management and scalability.
 Ingress Controller: Acts as a load balancer, distributing traffic to pods within the cluster. Kubernetes automatically handles pod failures, ensuring high availability by creating and assigning new pods to nodes with lower loads.
