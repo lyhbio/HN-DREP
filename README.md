@@ -14,7 +14,7 @@ Our web application consists of two main components:
 By separating the frontend and backend into distinct components, we ensure modularity, scalability, and maintainability of our web application architecture.
 
 ## Reproducing Our Web Application with Docker: A Step-by-Step Guide[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10674628.svg)](https://zenodo.org/record/10674628)
-1. **Download Repository Data**: Begin by downloading all data from the repository containing the Drug Repositioning Platform codebase. This ensures that the Docker build process has access to all required files and dependencies.Data is available at：[https://zenodo.org/records/10674628](https://zenodo.org/records/10674628).
+1. **Download Repository Data**: Begin by downloading all data from the repository containing the Drug Repositioning Platform codebase, which is available at：[https://zenodo.org/records/10674628](https://zenodo.org/records/10674628).This ensures that the Docker build process has access to all required files and dependencies.
 2. **Navigate to Dockerfile Directory**: Open a terminal or command prompt and navigate to the directory containing the Dockerfile. This file specifies the configuration and dependencies for our Drug Repositioning Platform.
 ~~~
 cd drug
