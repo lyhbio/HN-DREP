@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "author": "wzn <13368343973@163.com>",
+  "scripts": {
+    "dev": "max dev",
+    "build": "max build",
+    "serviceId": "fdf901025fdf",
+    "release": "scp ~/Documents/output-project/drp/dist/*  ubuntu@129.226.144.36:/htdocs/DrugRepositionUI &  scp -r ~/Documents/output-project/drp/dist/static  ubuntu@129.226.144.36:/htdocs/DrugRepositionUI",
+    "format": "prettier --cache --write .",
+    "prepare": "husky install",
+    "postinstall": "max setup",
+    "setup": "max setup",
+    "start": "npm run dev",
+    "gzipImg": "imagemin src/assets/* --out-dir=src/assets"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.1.4",
+    "@ant-design/pro-components": "^2.6.28",
+    "@umijs/max": "^4.0.70",
+    "ahooks": "^3.7.7",
+    "antd": "^5.9.4",
+    "classnames": "^2.3.2",
+    "echarts": "^5.4.2",
+    "echarts-gl": "^2.0.9",
+    "lodash": "^4.17.21",
+    "qs": "^6.11.2",
+    "react-markdown": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.195",
+    "@types/qs": "^6.9.9",
+    "@types/react": "^18.2.11",
+    "@types/react-dom": "^18.2.4",
+    "husky": "^8.0.3",
+    "imagemin-cli": "^7.0.0",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "prettier-plugin-organize-imports": "^3.2.2",
+    "prettier-plugin-packagejson": "^2.4.3",
+    "typescript": "^5.1.3"
+  }
+}

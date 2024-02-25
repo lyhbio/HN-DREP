@@ -1,0 +1,27 @@
+.table-show-container {
+  .custom-cell,
+  .custom-method-cell {
+    padding: 0 !important;
+    height: 48px;
+    color: #fff;
+    cursor: pointer;
+    .custom-cell-render {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}
+
+.hide-table-children-table-container {
+  .ant-table-header {
+    .ant-table-thead {
+      tr:not(:first-child) {
+        display: none;
+      }
+    }
+  }
+}

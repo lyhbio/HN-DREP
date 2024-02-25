@@ -1,0 +1,144 @@
+#root,
+.ant-pro-layout,
+body {
+  height: 100%;
+}
+
+.link-text {
+  color: @primary-color !important;
+  cursor: pointer;
+}
+
+.pointer-text {
+  cursor: pointer;
+}
+
+.mb-md {
+  margin-bottom: 16px;
+}
+
+.mt-md {
+  margin-top: 16px;
+}
+
+.mt-xl {
+  margin-top: 24px;
+}
+.mt-sm {
+  margin-top: 8px;
+}
+
+.mb-xs {
+  margin-bottom: 8px;
+}
+
+.no-padding-card {
+  .ant-pro-card-body {
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+  }
+}
+
+.ant-page-header {
+  background-color: #fff;
+}
+
+.ant-descriptions-bordered {
+  .ant-descriptions-item-label {
+    width: 280px;
+  }
+
+  .ant-descriptions-item-content {
+    width: 600px;
+    font-weight: bold;
+  }
+}
+
+.ant-pro-top-nav-header-menu {
+  .ant-menu-overflow {
+    justify-content: flex-end;
+  }
+}
+
+.ant-page-header {
+  background: none no-repeat center center;
+  background-color: #1a222b;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 16px;
+
+  .ant-page-header-heading-title {
+    color: #fff;
+  }
+  .ant-page-header-heading-sub-title {
+    color: #fff;
+  }
+
+  .ant-breadcrumb {
+    a,
+    span,
+    .ant-breadcrumb-separator {
+      color: #fff;
+    }
+  }
+
+  .ant-page-header-back-button {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.ant-menu-item {
+  font-weight: bolder;
+}
+
+.ant-descriptions-bordered .ant-descriptions-item-content {
+  font-weight: normal;
+}
+
+.ant-pro-top-nav-header-logo {
+  > *:first-child {
+    img {
+      height: 56px;
+      width: 56px;
+    }
+  }
+}
+
+.ant-pro-field-index-column {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.ant-select-item-option {
+  border: 1px solid transparent;
+}
+.ant-select-item-option-active {
+  border: 1px solid @primary-color;
+}
+
+.ant-page-header-heading {
+  .ant-page-header-heading-left {
+    flex-direction: column;
+    align-items: flex-start;
+    .ant-page-header-heading-sub-title {
+      margin-top: 8px;
+    }
+  }
+}
+
+.ant-page-header-has-breadcrumb {
+  .ant-page-header-heading {
+    .ant-page-header-heading-left {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+}
